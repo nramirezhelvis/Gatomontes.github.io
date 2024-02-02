@@ -14,19 +14,27 @@ header {
 }
 
 .navbar__ul {
+
     display: flex;
     list-style: none;
 }
 
 .navbar__li {
+    display: flex;
     padding: 15px;
     border-radius: 10px;
     transition: .1s;
+    align-items: center;
 }
 
 .navbar__li a {
     text-decoration: none;
     color: #000;
+    text-align: center;
+}
+
+.navbar__li a::first-letter {
+    text-transform: uppercase;
 }
 
 /* Hover */

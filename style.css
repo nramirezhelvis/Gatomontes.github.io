@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.title {
+    background-color: aqua;
+}
+
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar__ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__li {
+    padding: 15px;
+    border-radius: 10px;
+    transition: .1s;
+}
+
+.navbar__li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Hover */
+
+.navbar__li:hover {
+    background-color: #7fef47;
+}
+
+.navbar__li:hover a {
+    color: rgb(0, 57, 95);
+}

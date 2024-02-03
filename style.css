@@ -1,12 +1,51 @@
+* {
+    margin: 0;
+}
+
+*::first-letter {
+    text-transform: uppercase;
+}
+
+option::first-letter {
+    text-transform: uppercase;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #019DF4;
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #0091de;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    background-color: #000429;
+    background: conic-gradient(#00227e 5%,
+            /* Primer color comienza desde el inicio (0%) */
+            #000429 45%,
+            /* El primer color ocupa el 75% del círculo */
+            #000429 74%,
+            /* El segundo color comienza donde termina el primero (75%) */
+            #00227e 100%
+            /* El segundo color ocupa el 25% restante del círculo (100% - 75%) */
+        );
+    padding: 40px 15px 40px 15px;
 }
 
 .title {
-    background-color: aqua;
+    font-family: 'Geologica', sans-serif;
+    font-size: 40px;
+    color: #f58cffe7;
+    margin: 0 0 0 60px;
 }
 
 .navbar {
@@ -14,7 +53,6 @@ header {
 }
 
 .navbar__ul {
-
     display: flex;
     list-style: none;
 }
@@ -29,20 +67,20 @@ header {
 
 .navbar__li a {
     text-decoration: none;
-    color: #000;
+    color: #eaeaea;
     text-align: center;
-}
-
-.navbar__li a::first-letter {
-    text-transform: uppercase;
 }
 
 /* Hover */
 
 .navbar__li:hover {
     background-color: #7fef47;
+    font-weight: bold;
+    padding: 0 25px;
 }
 
 .navbar__li:hover a {
     color: rgb(0, 57, 95);
 }
+
+@media screen and (width:700px) {}

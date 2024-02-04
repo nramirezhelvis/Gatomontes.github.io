@@ -1,0 +1,16 @@
+.about_me{
+    background-color: #90e653;
+    height: 250px;
+    padding-top: 50px;
+    margin: 20px 0;
+}
+
+.about_me-container {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.about_me-container__p {
+    font-family: 'Geologica', system-ui;
+    font-size: 20px;
+}

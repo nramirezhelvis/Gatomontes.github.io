@@ -56,13 +56,23 @@ header {
     color: rgb(0, 57, 95);
 }
 
-@media screen and (max-width:842px) {
+@media screen and (max-width:878px) {
     .title {
         margin: 0 0 0 10px;
     }
 }
 
+@media screen and (max-width:824px) {
+    .title {
+        margin: 0 0 0 0px;
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width:792px) {
+    .title {
+        font-size: 40px;
+    }
     header {
         display: inline-block;
         width: calc(100% - 30px);
@@ -71,5 +81,13 @@ header {
 
     .navbar {
         display: none;
+    }
+
+}
+
+@media screen and (max-width:280px) {
+    .title {
+        font-size: 30px;
+        margin: 0;
     }
 }

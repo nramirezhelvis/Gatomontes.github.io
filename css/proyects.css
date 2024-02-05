@@ -89,3 +89,16 @@
         margin: 50px 0%;
     }
 }
+
+@media screen and (max-width:280px) {
+
+    .project-article__img {
+        width: 250px;
+        transition: .3s;
+    }
+
+    .project-article-name {
+        left: 20%;
+    }
+    
+}

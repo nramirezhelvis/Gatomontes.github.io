@@ -17,9 +17,9 @@
 .skills-container {
     display: flex;
     width: 900px;
-    background-color: #000061;
+    background-color: #141121;
     border-radius: 30px;
-    border: 8px solid #4242ec;
+    border: 8px solid #133383;
 }
 
 .skills-container__article {
@@ -30,8 +30,8 @@
 }
 
 .skills__article-medium {
-    border-right: 5px solid #4242ec;
-    border-left: 5px solid #4242ec;
+    border-right: 5px solid #133383;
+    border-left: 5px solid #133383;
 }
 
 .skills-container__h3 {
@@ -46,7 +46,7 @@
 }
 
 .skills-container-skills img {
-    margin: 20px;
+    margin: 40%  0 10% 0;
 }
 
 .skills-container__angular,

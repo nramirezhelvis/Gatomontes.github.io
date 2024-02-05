@@ -1,0 +1,18 @@
+footer {
+    background-color: #343A40;
+    color: white;
+    height: 150px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    display: inline-block;
+    padding: 40px 20px 40px 20px;
+    color: white;
+}
+
+footer i {
+    display: inline-block;
+    font-size: 30px;
+}

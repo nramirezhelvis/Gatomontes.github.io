@@ -1,0 +1,63 @@
+.skills {
+    background-color: #f58cffe7;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__h2 {
+    margin: 60px 0 30px 0;
+}
+
+.skills-container {
+    display: flex;
+    width: 900px;
+    background-color: #000061;
+    border-radius: 30px;
+    border: 8px solid #4242ec;
+}
+
+.skills-container__article {
+    width: 33.3%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.skills__article-medium {
+    border-right: 5px solid #4242ec;
+    border-left: 5px solid #4242ec;
+}
+
+.skills-container__h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0 0 15px;
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: normal;
+    font-size: 25px;
+    color: #fedf44;
+}
+
+.skills-container-skills img {
+    margin: 20px;
+}
+
+.skills-container__angular,
+.skills-container__spring,
+.skills-container__java,
+.skills-container__mysql,
+.skills-container__sqlserver {
+    width: 57px;
+}
+
+.skills-container__css,
+.skills-container__html {
+    width: 50px;
+}

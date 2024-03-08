@@ -14,130 +14,145 @@
     <link rel="stylesheet" href="scss/style.css">
     <!-- boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
-
     <header class="header">
-        <nav class="navbar">
-            <ul class="list">
-                <li class="item"><a href="">Inicio</a></li>
-                <li class="item"><a href="#about_me">Sobre mi</a></li>
-                <li class="item"><a href="#skills">Habilidades</a></li>
-                <li class="item"><a href="#proyects">Proyectos</a></li>
-                <li class="item"><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="header__container">
+            <nav class="header__navbar">
+                <ul class="header__list">
+                    <li class="header__item"><a href="">Inicio</a></li>
+                    <li class="header__item"><a href="#about-me">Sobre mi</a></li>
+                    <li class="header__item"><a href="#skills">Habilidades</a></li>
+                    <li class="header__item"><a href="#proyects">Proyectos</a></li>
+                    <li class="header__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header__menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <script src="menu.js"></script>
+        </div>
     </header>
 
-    <main>
-        <section class="inicio">
-            <div class="container">
-                <div class="perfil">
-                    <img src="images/PandaEncontrado.png" alt="">
+    <section class="inicio">
+        <div class="inicio__container">
+            <div class="inicio__perfil">
+                <img src="images/PandaEncontrado.png">
+            </div>
+            <h1 class="inicio__name">Gatomontes</h1>
+        </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+        <h2 class="about-me__title">Sobre mi</h2>
+        <div class="about-me__container">
+            <p class="about-me__content">
+                Soy un estudiante de programación, aficionado con la
+                enfocado en comprender y aprender más cada día.
+                Actualmente,estoy cursando la carrera de Ingeniería de Sistemas.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="skills__title">Habilidades</h2>
+        <div class="skills__container">
+            <article class="skills__skill">
+                <div class="skills__title-skill">
+                    <h3>Front-End:</h3>
                 </div>
-                <h1 class="name">Gatomontes</h1>
-            </div>
-            <div class="circle circle__bot-1"></div>
-        </section>
+                <div class="skills__images-skill">
+                    <img src="images/Angular.png">
+                    <img src="images/css.png">
+                    <img src="images/html.png">
+                    <img src="images/sass.png">
+                </div>
+            </article>
+            <article class="skills__skill">
+                <div class="skills__title-skill">
+                    <h3>Back-End:</h3>
+                </div>
+                <div class="skills__images-skill">
+                    <img src="images/spring boot.png">
+                    <img src="images/java.png">
+                    <img src="images/hibernate.png">
+                </div>
+            </article>
+            <article class="skills__skill">
+                <div class="skills__title-skill">
+                    <h3>Base de datos:</h3>
+                </div>
+                <div class="skills__images-skill">
+                    <img src="images/MySQL.png">
+                    <img src="images/SQLServer.png">
+                </div>
+            </article>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
 
-        <section class="about_me" id="about_me">
-            <h2 class="title">sobre mi</h2>
-            <div class="container">
-                <p class="content">
-                    Soy un estudiante de programación, aficionado con la
-                    <br>
-                    enfocado en comprender y aprender más cada día.
-                    <br>
-                    Actualmente,estoy cursando la carrera de Ingeniería de Sistemas.
-                </p>
-            </div>
-        </section>
+    <section class="proyects">
+        <h2 class="proyects"></h2>
+    </section>
+    <!-- 
+    <section class="proyects" id="proyects">
+        <h2 class="title">proyectos</h2>
+        <select name="category" id="">
+            <option value="">Seleccione tipo de proyecto</option>
+            <option value="">todos</option>
+            <option value="">Spring Boot</option>
+            <option value="">Angular</option>
+            <option value="">Java</option>
+            <option value="">HTML 5</option>
+        </select>
+        <select name="order" id="">
+            <option value="">Más reciente</option>
+            <option value="">Más antiguo</option>
+        </select>
+        <div class="container">
+            <article class="article">
+                <img src="images/proyecto1.png" alt="">
+                <span class="name">projecto 1</span>
+                <a href=""><i class="project-article__i project-article__github bi bi-github"></i></a>
+                <a href=""><i class="project-article__i project-article__details bi bi-laptop"></i></a>
+            </article>
+            <article class="article">
+                <img src="images/proyecto2.png" alt="">
+                <span class="name">projecto 2</span>
+                <a href=""><i class="github bi bi-github"></i></a>
+                <a href=""><i class="details bi bi-laptop"></i></a>
+            </article>
+            <article class="article">
+                <img src="images/proyecto3.jpg" alt="">
+                <span class="name">projecto 3</span>
+                <a href=""><i class="github bi bi-github"></i></a>
+                <a href=""><i class="details bi bi-laptop"></i></a>
+            </article>
+            <article class="article">
+                <img src="images/proyecto4.png" alt="">
+                <span class="name">projecto 4</span>
+                <a href=""><i class="github bi bi-github"></i></a>
+                <a href=""><i class="details bi bi-laptop"></i></a>
+            </article>
+            <article class="article">
+                <img src="images/proyecto5.png" alt="">
+                <span class="name">projecto 5</span>
+                <a href=""><i class="github bi bi-github"></i></a>
+                <a href=""><i class="details bi bi-laptop"></i></a>
+            </article>
+            <article class="article">
+                <img src="images/proyecto6.png" alt="">
+                <span class="name">projecto 6</span>
+                <a href=""><i class="github bi bi-github"></i></a>
+                <a href=""><i class="details bi bi-laptop"></i></a>
+            </article>
+        </div>
+    </section>
+ -->
 
-        <section class="skills" id="skills">
-            <h2 class="title">Habilidades</h2>
-            <div class="container">
-                <article class="article article-start">
-                    <h3 class="article_title title">Front-End</h3>
-                    <div class="article__container">
-                        <img class="article_angular" src="images/Angular.png" alt="">
-                        <img class="article_css" src="images/css.png" alt="">
-                        <img class="article_html" src="images/html.png" alt="">
-                    </div>
-                </article>
-                <article class="article article-medium">
-                    <h3 class="article_title title">Back-End</h3>
-                    <div class="article__container">
-                        <img class="article_spring" src="images/spring boot.png" alt="">
-                        <img class="article_java" src="images/java.png" alt="">
-                    </div>
-                </article>
-                <article class="article article-end">
-                    <h3 class="article_title title">Base de datos</h3>
-                    <div class="article__container">
-                        <img class="article_mysql" src="images/MySQL.png" alt="">
-                        <img class="article_sqlserver" src="images/SQLServer.png" alt="">
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="proyects" id="proyects">
-            <h2 class="title">proyectos</h2>
-            <select name="category" id="">
-                <option value="">Seleccione tipo de proyecto</option>
-                <option value="">todos</option>
-                <option value="">Spring Boot</option>
-                <option value="">Angular</option>
-                <option value="">Java</option>
-                <option value="">HTML 5</option>
-            </select>
-            <select name="order" id="">
-                <option value="">Más reciente</option>
-                <option value="">Más antiguo</option>
-            </select>
-            <div class="container">
-                <article class="article">
-                    <img src="images/proyecto1.png" alt="">
-                    <span class="name">projecto 1</span>
-                    <a href=""><i class="project-article__i project-article__github bi bi-github"></i></a>
-                    <a href=""><i class="project-article__i project-article__details bi bi-laptop"></i></a>
-                </article>
-                <article class="article">
-                    <img src="images/proyecto2.png" alt="">
-                    <span class="name">projecto 2</span>
-                    <a href=""><i class="github bi bi-github"></i></a>
-                    <a href=""><i class="details bi bi-laptop"></i></a>
-                </article>
-                <article class="article">
-                    <img src="images/proyecto3.jpg" alt="">
-                    <span class="name">projecto 3</span>
-                    <a href=""><i class="github bi bi-github"></i></a>
-                    <a href=""><i class="details bi bi-laptop"></i></a>
-                </article>
-                <article class="article">
-                    <img src="images/proyecto4.png" alt="">
-                    <span class="name">projecto 4</span>
-                    <a href=""><i class="github bi bi-github"></i></a>
-                    <a href=""><i class="details bi bi-laptop"></i></a>
-                </article>
-                <article class="article">
-                    <img src="images/proyecto5.png" alt="">
-                    <span class="name">projecto 5</span>
-                    <a href=""><i class="github bi bi-github"></i></a>
-                    <a href=""><i class="details bi bi-laptop"></i></a>
-                </article>
-                <article class="article">
-                    <img src="images/proyecto6.png" alt="">
-                    <span class="name">projecto 6</span>
-                    <a href=""><i class="github bi bi-github"></i></a>
-                    <a href=""><i class="details bi bi-laptop"></i></a>
-                </article>
-            </div>
-        </section>
-
-    </main>
     <footer>
         <section id="contacto">
             <a href=""><i class="bi bi-github"></i></a>
@@ -145,6 +160,7 @@
         </section>
         <p>&copy; 2024 Gatomontes</p>
     </footer>
+
 </body>
 
 </html>
